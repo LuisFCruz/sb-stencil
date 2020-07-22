@@ -1,0 +1,60 @@
+$primary: $green !default;
+$primary-text: $white !default;
+$primary-var: --primary-color !default;
+$primary-text-var: --primary-text-color !default;
+
+$accept: $wild-strawberry !default;
+$accept-text: $white !default;
+$accept-var: --accept-color !default;
+$accept-text-var: --accept-text-color !default;
+
+$warn: $red !default;
+$warn-text: $white !default;
+$warn-var: --warn-color !default;
+$warn-text-var: --warn-text-color !default;
+
+$link: $white !default;
+$link-text: $blue !default;
+$link-var: --link-color !default;
+$link-text-var: --link-text-color !default;
+
+$variables: (
+  "green-color": $green,
+  "blue-color": $blue,
+  "gray-color": $gray,
+  "white-color": $white,
+  "red-color": $red,
+  "wild-strawberry-color": $wild-strawberry,
+  "primary-color": $primary,
+  "accept-color": $accept,
+  "warn-color": $warn,
+  "link-color": $link,
+  "primary-text-color": $primary-text,
+  "accept-text-color": $accept-text,
+  "warn-text-color": $warn-text,
+  "link-text-color": $link-text,
+  "radius": $radius,
+  "radius-large": $radius-large
+) !default;
+
+/*
+  [label]: ( [main color], [text color] )
+*/
+$colors: (
+  "primary": (
+    var($primary-var),
+    var($primary-text-var),
+  ),
+  "accept": (
+    var($accept-var),
+    var($accept-text-var),
+  ),
+  "warn": (
+    var($warn-var),
+    var($warn-text-var),
+  ),
+  "link": (
+    var($link-var),
+    var($link-text-var),
+  ),
+) !default;

@@ -1,0 +1,6 @@
+:root {
+  @each $name, $pair in $variables {
+    $color: nth($pair, 1);
+    --#{$name}: #{$color};
+  }
+}

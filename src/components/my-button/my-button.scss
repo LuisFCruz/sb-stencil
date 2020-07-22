@@ -1,0 +1,25 @@
+my-button {
+  button {
+    padding: 15px;
+    border-radius: var($radius-var);
+    outline: none;
+    border-color: transparent;
+    font-weight: 700;
+    font-family: sans-serif;
+    cursor: pointer;
+
+    @each $name, $pair in $colors {
+      $color: nth($pair, 1);
+      $textColor: nth($pair, 2);
+
+      &.#{$name} {
+        background: $color;
+        color: $textColor;
+      }
+    }
+
+    &:disabled {
+      background: var($gray-var);
+    }
+  }
+}
